@@ -1,0 +1,20 @@
+.containerbotao {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 15px;
+  border-radius: 0.375rem;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.containerbotao:hover {
+  color: #ffffff;
+  background-color: #d27e24;
+  font-size: 18px;
+  transform: scale(1.1);
+}

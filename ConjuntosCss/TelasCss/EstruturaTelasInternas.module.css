@@ -1,0 +1,92 @@
+.containerPrincipal {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.containerTelaPrincipal {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.cabecalhoTelaPrincipal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d97706;
+  color: white;
+  padding: 1.25rem 1.5rem;
+}
+
+.containerLinkTelaPrincipal:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.containerFlechaRetorno {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.containerFlechaRetorno:hover {
+  color: #9ca3af;
+}
+
+.containerEspacoCabecalho {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.containerElementosIconButton {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerBotão:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.containerNavIconButton {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(8rem, 1fr));
+  gap: 0.75rem;
+  width: min(100%, 42rem);
+}
+
+.containerItemIconButton {
+  position: relative;
+}
+
+.containerFavIconButton {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .containerNavIconButton {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerNavIconButton {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
